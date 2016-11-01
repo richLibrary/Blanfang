@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>招商加盟详情</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/meichant.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<!----banner图---->
+<div class="wrapImg">
+	<a href="" target="_blank" title=""><img src="images/testimg/profile.jpg" width="1920" height="350"></a>
+</div>
+	<!--面包屑导航-->
+<div class="breadNav">
+	<h2><span>Join</span>招商加盟</h2>
+	<div class="breadInfor">
+		<div class="NavList">
+			<i class="iconfont">&#xe60b;</i>当前位置：<a href="#" title="" target="_self">首页</a><code> &gt; </code><a href="#" title="" target="_self">招商加盟</a><code> &gt; </code>
+			<span>加盟优势</span>
+		</div>
+		<ul class="breadTab">
+			<li>加盟优势</li>
+			<li>加盟政策</li>
+			<li>加盟流程</li>
+			<li class="on">加盟项目</li>
+			<li>代理区域查询</li>
+		</ul>
+	</div>
+</div>
+<!--招商加盟详情-->
+<div class="merdetMain">
+	<div class="merdetail">		
+		<div class="merdetHr">
+			<span>孕睫术</span>
+		</div>
+		<div class="merdetImg">
+			<img src="images/testimg/scroll.jpg" width="552" height="612" alt="" />
+		</div>
+		<div class="merdetCon">
+			<h2>项目特点</h2>
+			<dl>
+				<dt><img src="images/testimg/culture.jpg" width="226" height="226" alt=""></dt>
+				<dd>孕睫术是通过技术，产品激活毛囊组织，非医疗自体孕育再生睫毛。原理采用全球独创中胚层毛囊激活技术，给予毛囊补充营养，松土施肥。我们随着年龄的增长体内毛囊细胞会减少，营养会流失，孕睫术通过产品补充更多 的毛囊细胞生长因子，让睫毛再生使自己的睫毛长长.长密.长粗.长黑！</dd>
+				<dd><a href="" target="_self" title="">在线咨询</a></dd>
+			</dl>
+		</div>
+		<div class="stepsCon">
+			<h2>效果流程</h2>
+			<ul>
+				<li><img src="images/testimg/culture.jpg" width="140" height="225" alt=""></li>
+				<li><img src="images/testimg/culture.jpg" width="140" height="225" alt=""></li>
+				<li><img src="images/testimg/culture.jpg" width="140" height="225" alt=""></li>
+				<li><img src="images/testimg/culture.jpg" width="140" height="225" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div class="merdetShow">
+		<h2>效果展示</h2>
+		<ul>
+			<li><img src="images/testimg/dynimg.jpg" width="191" height="191" alt=""></li>
+			<li><img src="images/testimg/dynimg.jpg" width="191" height="191" alt=""></li>
+			<li><img src="images/testimg/dynimg.jpg" width="191" height="191" alt=""></li>
+			<li><img src="images/testimg/dynimg.jpg" width="191" height="191" alt=""></li>
+			<li><img src="images/testimg/dynimg.jpg" width="191" height="191" alt=""></li>
+			<li><img src="images/testimg/dynimg.jpg" width="191" height="191" alt=""></li>
+		</ul>
+	</div>
+	<div class="myMerdet">
+		<input type="button" value="我要加盟" />
+	</div>
+	
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript">
+	angular.module('myApp', []).controller('userCtrl', function($scope) {})
+</script>
+<script type="text/javascript">
+	// 加盟店展示选项卡切换
+	$(function(){
+		$(".joinTab a").each(function(index){
+			$(this).click(function(){
+				$(".joinTab a.cur").removeClass("cur");
+				$(this).addClass("cur");
+				$(".joinCon>ul:eq("+index+")").show().siblings().hide();
+				});
+		});
+		$('.merList li:nth-child(2n)').css('margin-right','0');
+	});
+</script>
+</body>
+</html>

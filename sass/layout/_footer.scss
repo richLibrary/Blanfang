@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*---- 公共底部 ----*/
+.Footer{
+    @include all;
+}
+.footAdd{
+    @include all;
+    background:url(../../images/testimg/addresBg1.jpg) no-repeat scroll 0 0;
+}
+.footaddList{
+    @include center;
+    padding:50px 0;
+    dl{
+        @include wh(350px,auto);
+        float:left;
+        margin-right:50px;
+    dt{
+       @include wh(84px,96px);
+       text-align:center;
+       border-right:1px solid #7f5695;
+       float:left;
+       padding-top:26px;
+     i{font-size:36px;color:#fff;}
+     }
+    dd{
+       float:left;
+       margin-left:30px;
+       font:12px/20px $font;
+       color:#fff;
+       @include wh(235px,auto);
+       overflow:hidden;
+    b{font:30px/48px $font;display:block;}
+      }
+    }
+}
+.wenxin{
+    @include all;
+    text-align:center;
+    padding:40px 0;
+    li{
+      display:inline-block;margin:0 20px;
+    span{
+        display:block;
+        font:14px/24px $font;
+        color:#333;
+        }  
+      }
+}
+.footnavList{
+    @include all;
+    border-bottom:$border;
+    border-top:$border;
+    text-align:center;
+  a{
+      padding:0 24px;
+      display:inline-block;
+      font:16px/49px $font;
+      color:#333;
+  }
+}
+.footText{
+    @include all;
+    text-align:center;
+    margin-top:50px;
+    p{font:14px/22px $font;color:#666;}
+    }

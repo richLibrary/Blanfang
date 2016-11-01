@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>产品展示最新科研详情页</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/product.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<!----banner图---->
+<div class="wrapImg">
+	<a href="" target="_blank" title=""><img src="images/testimg/profile.jpg" width="1920" height="350"></a>
+</div>
+<!----面包屑导航---->
+	<div class="breadNav">
+		<h2><span>Product</span>产品展示</h2>
+		<div class="breadInfor">
+		<div class="NavList">
+			<i class="iconfont">&#xe60b;</i>当前位置：<a href="#" title="" target="_self">首页</a><code> &gt; </code><a href="#" title="" target="_self">产品展示</a><code> &gt; </code>
+			<span>最新科研</span>
+		</div>
+			<h3>美容消斑丸</h3>
+		</div>
+	</div>
+	<div class="scDetail">
+		<dl>
+			<dt class="proImg"><img src="images/testimg/dynimg.jpg" width="424" height="350" alt=""></dt>
+			<dd><b>主要成分</b></dt>
+			<dd><p>草本培植水光膜20g　草本培植润肤油20g</p></dd>			
+			<dd><b>主要成分</b></dt>
+			<dd><p>草本培植水光膜20g　草本培植润肤油20g</p></dd>		
+			<dd><b>主要成分</b></dt>
+			<dd><p>草本油20g草本培植水光膜20g　草本培植润肤油20g草本培植水光膜20g　草本培植润肤油20g</p></dd>		
+			<dd><b>主要成分</b></dt>
+			<dd><p>草本培植水光膜20g　草本培植润肤油20g</p></dd>					
+		</dl>
+	</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript">
+	angular.module('myApp', []).controller('userCtrl', function($scope) {})
+</script>
+</body>
+</html>

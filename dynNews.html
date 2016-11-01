@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>企业动态新闻详情</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/dynamic.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<!----banner图---->
+<div class="wrapImg">
+	<a href="" target="_blank" title=""><img src="images/testimg/profile.jpg" width="1920" height="350"></a>
+</div>
+<!----新闻详情---->
+<div class="newsMain">	
+	<div class="newsLeft">
+		<div class="leftTitle"><span>Enterprise</span>企业动态</div>
+		<h2>热门新闻</h2>
+		<ul class="newsList">
+			<li>
+				<a href="" target="_blank" title=""><img src="images/testimg/dynimg.jpg" width="188" height="188" alt=""></a>
+				<span><i class="iconfont">&#xe60d;</i>2016-07-12</span>
+				<h3><a class="newsTT" href="" target="_blank" title="">亚洲国际博澜坊美容集团【香港】有限公司</a></h3>
+			</li>
+			<li>
+				<a href="" target="_blank" title=""><img src="images/testimg/dynimg.jpg" width="188" height="188" alt=""></a>
+				<span><i class="iconfont">&#xe60d;</i>2016-07-12</span>
+				<h3><a class="newsTT" href="" target="_blank" title="">亚洲国际博澜坊美容集团【香港】有限公司</a></h3>
+			</li>
+			<li>
+				<a href="" target="_blank" title=""><img src="images/testimg/dynimg.jpg" width="188" height="188" alt=""></a>
+				<span><i class="iconfont">&#xe60d;</i>2016-07-12</span>
+				<h3><a class="newsTT" href="" target="_blank" title="">亚洲国际博澜坊美容集团【香港】有限公司</a></h3>
+			</li>
+		</ul>
+	</div>
+	<div class="newsRight">
+		<div ng-include="'navTip.html'"></div>
+		<div class="newsTitle">
+			<h2>五天彻底根除遗传性雀斑皮膜培植核心技术</h2>
+			<span>作者<b>admin</b></span>
+			<span><i class="iconfont">&#xe60d;</i>2016-07-12</span>
+			<span><i class="iconfont">&#xe60e;</i>2030</span>	
+		</div>
+		<div class="newsText">
+			<p>吻芳颜最新祛除遗传性雀斑皮膜培植核心技术，不仅能够在五天之内彻底根除雀斑，还能够祛黄美白，让您的皮肤变得白嫩如霜，晶莹剔透。</p>
+			<p>雀斑是一种常染色体显性遗传性色素沉着斑点，女性居多长在表皮的最底层（生发层）,雀斑小到针尖大至米粒大呈一颗一颗状，是不会粘连
+			      在一起的，无瘙痒和疼痛感，不影响健康，但不美观常出现于前额、鼻梁和脸颊等处，偶尔也会出现于颈部、肩部、手背等处。春夏季节重，
+			      秋冬变浅。 雀斑都是遗传的雀斑遗传基因＂在紫外线的照射下基底层的酪氨酸酶活性增加,形成黑色素,即雀斑,也叫基因斑.它成于胎儿期是
+			      与生俱来的固定体,雀斑分显形斑和隐形斑,显形斑大约6-12岁时开始形成,18岁左右到达高峰；
+			</p>
+			<div class="textImg"><img src="images/testimg/dynimg.jpg"></div>
+			<p>雀斑是一种常染色体显性遗传性色素沉着斑点，女性居多长在表皮的最底层（生发层）,雀斑小到针尖大至米粒大呈一颗一颗状，是不会粘连
+			      在一起的，无瘙痒和疼痛感，不影响健康，但不美观常出现于前额、鼻梁和脸颊等处，偶尔也会出现于颈部、肩部、手背等处。春夏季节重，
+			      秋冬变浅。 雀斑都是遗传的雀斑遗传基因＂在紫外线的照射下基底层的酪氨酸酶活性增加,形成黑色素,即雀斑,也叫基因斑.它成于胎儿期是
+			      与生俱来的固定体,雀斑分显形斑和隐形斑,显形斑大约6-12岁时开始形成,18岁左右到达高峰；
+			</p>
+			<dl>
+				<dt>上一篇</dt>
+				<dd><a href="" target="_blank" title="">签吻芳颜红血丝阻断机一次彻底根除红血丝，永不复发</a></dd>
+			</dl>
+			<dl>
+				<dd><a href="" target="_blank" title="">签吻芳颜红血丝阻断机一次彻底根除红血丝，永不复发</a></dd>
+				<dt>下一篇</dt>
+			</dl>
+		</div>
+	</div>
+</div>
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript">
+	angular.module('myApp', []).controller('userCtrl', function($scope) {})
+</script>
+<script type="text/javascript">
+	// 选项卡切换
+	$(function(){
+		$(".breadTab li").each(function(index){
+			$(this).click(function(){
+				$(".breadTab li.on").removeClass("on");
+				$(this).addClass("on");
+				$(".InforCon>ul:eq("+index+")").show().siblings().hide();
+				});
+		});
+		$('.InforCon ul li:nth-child(4n)').css('margin-right','0');
+	});
+</script>
+</body>
+</html>

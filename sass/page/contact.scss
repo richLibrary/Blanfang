@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import "../base/_variables";
+@import "../layout/_breadNav";
+.wrapImg{
+    @include all;
+    img{width:100%;height:350px;display:block;}
+}
+.contactNav{
+    @include center;height:66px;font:14px/66px $font;
+    i{color:#333;font-size:22px;margin:0 6px;}
+    a{color:#999;}
+}
+.contactMain{@include center;margin:40px auto;}
+.problemMain{@include center;display:none;}
+.contactLeft{
+    height:auto;overflow:hidden;float:left;
+    h2{
+      font:22px/32px $font;
+      color:#fff;
+      text-align:center;
+      background:#724F8E;
+      position:relative;
+      @include wh(284px,194px);
+      float:left;
+      padding-top:90px;
+      span{font:30px/46px $font;display:block;color:#fff;margin-bottom:30px;}
+      &:before{content:'--- company';position:absolute;left:70px;bottom:119px;width:136px;font-size:16px;} 
+      }      
+}
+.contactText{
+    float:left;height:auto;overflow:hidden;margin-left:55px;
+    li{
+      font:16px/50px $font;color:#666;
+      b{
+        font-weight:700;color:#333;
+        }
+      i{font-size:22px;margin:0 6px;color:#333;}
+      }
+    }
+.Map{@include wh(1200px,300px);text-align:center;margin:0 auto;}
+/*---- 常见问题 ----*/
+.mertantPro{@include center;}
+.problemTab{
+    border-bottom:$border;height:40px;margin-top:40px;
+    li{
+      font:16px/40px $font;padding:0 24px;float:left;cursor:pointer;
+      &.cur{border-bottom:2px solid #724F8E;color:#724F8E;}
+    }
+}
+.problemCon{@include center;text-align:center;height:400px;}
+.problemOne{height:200px;overflow:hidden;}
+.problemMore{
+    @include center;border-top:$border;padding:20px 0;
+    p{
+      font:18px/42px $font;color:#333;text-align:center;
+    a{@include wh(112px,40px);display:inline-block;background:#724F8E;text-align:center;font:14px/40px $font;margin:0 8px;color:#fff;@include border-radius(30px);}
+    b{color:#ff0000;}
+    }
+}
+/*---- 培训课程 ----*/
+.courseMain{@include center;margin-top:20px;display:none;}
+.courseList{
+    height:auto;overflow:hidden;float:left;
+    li{margin:0 30px 20px 0;overflow:hidden;position:relative;@include wh(582px,auto);
+      b{
+       font:24px/40px $font;color:#333;margin:0 0 14px 21px;display:block;
+       }
+
+    }
+}
+.courMent{
+    @include wh(510px,auto);border:5px solid #e4dfe7;padding:30px;background:#fff;position:relative;
+    p{position:absolute;left:28px;top:-17px;}
+    span{display:block;font:14px/30px $font;color:#666;}
+    }
+.courseRight{
+    height:auto;overflow:hidden;float:left;
+    li{margin:0 0 20px 0;overflow:hidden;position:relative;@include wh(582px,auto);
+      b{
+       font:24px/40px $font;color:#333;margin:0 0 14px 21px;display:block;
+       }
+
+    }
+}
+/*---- 视频分享 ----*/
+.cvMain{
+    @include center;
+    ul{@include center;margin-top:20px;
+      li{
+        float:left;margin:0 34px 20px 0;position:relative;@include wh(376px,378px);
+       img{@include wh(378px,324px);overflow:hidden;} 
+       h3{font:14px/44px $font;color:#333;text-align:center;padding:0 6px;}
+      &:hover{
+         .courseHide{
+                background:rgba(114,79,142,.6);
+                @include filter;
+                padding-top:130px;
+                @at-root :root &{filter:none\9;};
+                @include wh(378px,250px);
+                i{display:block;}
+                span{display:block;}                       
+                }
+             } 
+        }
+    }    
+}
+.courseHide{
+        @include wh(378px,0);
+        position:absolute;
+        left:0;top:0;
+        @include transition(all .5s);
+        i{font-size:40px;text-align:center;color:#fff;display:none;}
+        span{font-size:20px;color:#fff;text-align:center;padding-top:10px;display:none;}
+        }
+        
+.courseTab{
+    height:50px;
+    overflow:hidden;    
+    position:relative;
+    margin:30px 0;
+    a{display:block;float:left;color:#724F8E;right:0;bottom:0;position:absolute;
+    &.cur{color:#333;}    
+    &.coursePrev{font-size:50px;right:50px;}
+    &.courseNext{font-size:50px}
+    }
+}
+/*---- 网站地图 ----*/
+.Map{
+    @include center;padding-top:20px;
+    h2{font:24px/70px $font;color:#723F8E;text-align:center;border-bottom:$border;}
+    dl{
+       text-align:left;height:auto;overflow:hidden;margin-bottom:30px;
+       dt{font:18px/34px $font;color:#fff;background:#723F8E;padding:0 22px;@include border-radius(20px);margin:20px 0;display:inline-block;}
+       dd{font:16px/40px $font;color:#333;}
+       }
+    }

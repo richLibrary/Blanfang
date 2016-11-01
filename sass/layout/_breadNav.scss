@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*----banner图----*/
+.wrapImg{
+    @include all;
+    img{width:100%;height:350px;display:block;}
+}
+.profileMain{@include all;}
+/*----面包屑导航----*/
+.breadNav{
+    @include center;
+    background:#fff;
+    h2{
+        font:22px/32px $font;
+        color:#fff;
+        text-align:center;
+        background:#724F8E;
+        position:relative;
+        @include wh(188px,153px);
+        float:left;
+        padding-top:35px;
+      span{font:30px/46px $font;display:block;color:#fff;margin-bottom:30px;}
+    &:before{content:'--- company';position:absolute;left:27px;bottom:78px;width:136px;font-size:16px;} 
+      }  
+}
+.breadInfor{
+    margin-left:30px;
+    float:left;
+    @include wh(982px,auto);
+    overflow:hidden;
+}
+.NavList{
+    height:65px;font:14px/65px $font;color:#333;border-bottom:$border;
+    i{color:#333;font-size:22px;margin:0 6px;}
+    a{color:#999;}
+    }
+.breadTab{
+    height:auto;
+    padding:41px  0;
+    overflow:hidden;
+    text-align:center;
+    border-bottom:$border;
+    li{
+      display:inline-block;
+      padding:0 27px;margin:0 20px;font:16px/37px $font;border:2px solid #FFF;color:#333;@include border-radius(30px);cursor:pointer;
+    &.on{border:2px solid #724F8E;color:#724F8E;}
+      }
+    }
+.profileCon{
+    @include all;
+    background:#f1f1f1;
+    padding-bottom:50px;
+}
+.comMain{
+    @include all;
+    background:#f1f1f1;
+}

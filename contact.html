@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>联系我们</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/contact.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<!----banner图--->
+<div class="wrapImg">
+	<a href="" target="_blank" title=""><img src="images/testimg/profile.jpg" width="1920" height="350"></a>
+</div>
+<!----面包屑导航--->
+<div class="contactNav">
+	<i class="iconfont">&#xe60b;</i>当前位置：<a href="#" title="" target="_self">首页</a><code> &gt; </code><span>联系我们</span>
+</div>
+<div class="contactMain">	
+	<div class="contactLeft">
+		<h2><span>Contact</span>联系我们</h2>
+		<img src="images/testimg/dynimg.jpg" width="284" height="284" alt="" />
+	</div>
+	<ul class="contactText">
+		<li><i class="iconfont">&#xe60b;</i><b>香港总部地址：</b>香港中环夏悫道12号美国银行中心大厦25楼2508A</li>
+		<li><i class="iconfont">&#xe600;</i><b>电话：</b>00852-39216080</li>
+		<li><i class="iconfont">&#xe60c;</i><b>传真：</b>00852-39216081</li>
+		<li><i class="iconfont">&#xe600;</i><b>全国免费统一招商热线：</b>400-600-3602</li>
+		<li><i class="iconfont">&#xe60f;</i><b>网址：</b>www.bolanfang.com</li>
+	</ul>
+</div>
+<div class="Map">
+	这是地图
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript">
+	angular.module('myApp', []).controller('userCtrl', function($scope) {})
+</script>
+<script type="text/javascript">
+	// 加盟店展示选项卡切换
+	$(function(){
+		$(".joinTab a").each(function(index){
+			$(this).click(function(){
+				$(".joinTab a.cur").removeClass("cur");
+				$(this).addClass("cur");
+				$(".joinCon>ul:eq("+index+")").show().siblings().hide();
+				});
+		});
+		$('.merList li:nth-child(2n)').css('margin-right','0');
+	});
+</script>
+</body>
+</html>

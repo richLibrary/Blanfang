@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*----分页导航----*/
+.paginator{
+    @include wh(1200px,50px);
+    overflow:hidden;
+    position:relative;
+    margin:30px auto;
+    text-align:right;
+    span{
+        &.this-page{display:inline-block;@include wh(48px,48px);color:#fff;border:$border;margin-right:8px;text-align:center;font:18px/48px $font;background:#724F8E;}          
+        }
+      a{
+        display:inline-block;
+        @include wh(48px,48px);
+        color:#666;
+        border:$border;
+        margin-right:8px;
+        text-align:center;
+        font:18px/48px $font;
+        &.inforBtn{color:#fff;background:#333;}
+        &.rightBtn{color:#fff;background:#724F8E;}
+       }
+ }

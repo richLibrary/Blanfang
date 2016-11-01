@@ -1,0 +1,64 @@
+@charset "UTF-8";
+*{word-break:break-word;}
+body,dd,dl,h1,h2,h3,h4,h5,h6,ol,p,ul{margin:0;}
+ol,ul{padding:0;}
+li,ul{list-style:none;}
+body{margin:0 auto;color:#333;font-family:\\5FAE\8F6F\96C5\9ED1;}
+img{border:0;-webkit-touch-callout:none;touch-callout:none;}
+html,img{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+:focus{outline:0;}
+:link,:visited,a{text-decoration:none;}
+a{color:#333;cursor:pointer;}
+a,a:active,a:hover{outline:0;}
+a:hover{outline:0;text-decoration:none;}
+button,html input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button;}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}
+button{overflow:visible;}
+button,select{text-transform:none;}
+input{line-height:normal;-webkit-appearance:none;}
+input::-webkit-input-placeholder{color:#999!important;font-family:\\9ED1\4F53;}
+/*---- 公共头部 ----*/
+.topBar{position:relative;overflow:hidden;width:100%;height:auto;height:134px;}
+.topbarMain{overflow:hidden;margin:0 auto;margin:30px auto;width:75pc;height:auto;}
+.topbarMain h1{position:relative;float:left;width:136px;height:74px;}
+.topbarMain h1 a{display:block;width:136px;height:74px;background:url(../../images/logo.jpg) no-repeat 0 0 scroll;text-indent:-999em;}
+.topbarMain span{float:left;display:block;width:270px;height:74px;border-left:1px solid #e4e4e4;}
+.topPhone{position:relative;float:right;margin-top:1pc;padding-left:50px;}
+.topPhone i{position:absolute;top:5px;left:0;margin:0 8px;color:#723f8e;font-size:34px;}
+.topPhone p{color:#333;font:14px/20px "微软雅黑";}
+.topPhone b{padding-right:15px;color:#723f8e;font:26px/26px "微软雅黑";font-style:italic;}
+/*-- Nav --*/
+.Nav{width:100%;height:52px;background:#723f8e;}
+.navList{margin:0 auto;padding-left:27px;width:1200px;height:52px;}
+.navList li{position:relative;float:left;}
+.navList li>a{display:inline-block;padding:0 27px;height:52px;color:#eddef5;font:16px/52px "微软雅黑";}
+.navList li:hover .navlistDown{width:116px;height:auto;background:#724F8E;}
+.navList li:hover .navlistDown a{display:block;}
+.navList li:hover .navlistDown a:hover{background:#723F8E;}
+.navlistDown{position:absolute;top:52px;left:0;z-index:9999;width:116px;height:0;background:#724F8E;}
+.navlistDown a{display:none;color:#fff;text-align:center;font:16px/40px "微软雅黑";}
+.topMain{width:100%;height:auto;}
+.topMain ul li>a{border:none;}
+/*---- 公共底部 ----*/
+.Footer{position:relative;overflow:hidden;width:100%;height:auto}
+.footAdd{position:relative;overflow:hidden;width:100%;height:auto;background:url(../../images/testimg/addresBg1.jpg) no-repeat scroll 0 0}
+.footaddList{overflow:hidden;margin:0 auto;padding:50px 0;width:1200px;height:auto}
+.footaddList dl{float:left;margin-right:50px;width:350px;height:auto}
+.footaddList dl dt{float:left;padding-top:26px;width:84px;height:96px;border-right:1px solid #7f5695;text-align:center}
+.footaddList dl dt i{color:#fff;font-size:36px}
+.footaddList dl dd{float:left;overflow:hidden;margin-left:30px;width:235px;height:auto;color:#fff;font:12px/20px "微软雅黑"}
+.footaddList dl dd b{display:block;font:30px/48px "微软雅黑"}
+.wenxin{position:relative;overflow:hidden;padding:40px 0;width:100%;height:auto;text-align:center}
+.wenxin li{display:inline-block;margin:0 20px}
+.wenxin li span{display:block;color:#333;font:14px/24px "微软雅黑"}
+.footnavList{position:relative;overflow:hidden;width:100%;height:auto;border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;text-align:center}
+.footnavList a{display:inline-block;padding:0 24px;color:#333;font:16px/49px "微软雅黑"}
+.footText{position:relative;overflow:hidden;margin-top:50px;width:100%;height:auto;text-align:center}
+.footText p{color:#666;font:14px/22px "微软雅黑"}
+/*----commom icon ----*/
+@font-face { font-family: 'iconfont'; src: url("//at.alicdn.com/t/font_1462355148_3180547.eot");
+  /* IE9*/
+src: url("//at.alicdn.com/t/font_1462355148_3180547.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1462355148_3180547.woff") format("woff"), url("//at.alicdn.com/t/font_1462355148_3180547.ttf") format("truetype"), url("//at.alicdn.com/t/font_1462355148_3180547.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont { font-family: "iconfont" !important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }

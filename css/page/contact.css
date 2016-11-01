@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*----banner图----*/
+.wrapImg{position:relative;overflow:hidden;width:100%;height:auto}
+.wrapImg img{display:block;width:100%;height:350px}
+.profileMain{position:relative;overflow:hidden;width:100%;height:auto}
+/*----面包屑导航----*/
+.breadNav{overflow:hidden;margin:0 auto;width:1200px;height:auto;background:#fff}
+.breadNav h2{position:relative;float:left;padding-top:35px;width:188px;height:153px;background:#724F8E;color:#fff;text-align:center;font:22px/32px "微软雅黑"}
+.breadNav h2 span{display:block;margin-bottom:30px;color:#fff;font:30px/46px "微软雅黑"}
+.breadNav h2:before{position:absolute;bottom:78px;left:27px;width:136px;content:'--- problem';font-size:16px}
+.breadInfor{float:left;overflow:hidden;margin-left:30px;width:982px;height:auto}
+.NavList{height:65px;border-bottom:1px solid #e4e4e4;color:#333;font:14px/65px "微软雅黑"}
+.NavList i{margin:0 6px;color:#333;font-size:22px}
+.NavList a{color:#999}
+.breadTab{overflow:hidden;padding:41px 0;height:auto;border-bottom:1px solid #e4e4e4;text-align:center}
+.breadTab li{display:inline-block;margin:0 20px;padding:0 27px;border:2px solid #FFF;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;color:#333;font:16px/37px "微软雅黑";cursor:pointer}
+.breadTab li.on{border:2px solid #724F8E;color:#724F8E}
+.profileCon{position:relative;overflow:hidden;padding-bottom:50px;width:100%;height:auto;background:#f1f1f1}
+.comMain{position:relative;overflow:hidden;width:100%;height:auto;background:#f1f1f1}
+.wrapImg{position:relative;overflow:hidden;width:100%;height:auto}
+.wrapImg img{display:block;width:100%;height:350px}
+.contactNav{overflow:hidden;margin:0 auto;width:1200px;height:auto;height:66px;font:14px/66px "微软雅黑"}
+.contactNav i{margin:0 6px;color:#333;font-size:22px}
+.contactNav a{color:#999}
+.contactMain{overflow:hidden;margin:0 auto;margin:40px auto;width:1200px;height:auto}
+.problemMain{display:none;overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.contactLeft{float:left;overflow:hidden;height:auto}
+.contactLeft h2{position:relative;float:left;padding-top:90px;width:284px;height:194px;background:#724F8E;color:#fff;text-align:center;font:22px/32px "微软雅黑"}
+.contactLeft h2 span{display:block;margin-bottom:30px;color:#fff;font:30px/46px "微软雅黑"}
+.contactLeft h2:before{position:absolute;bottom:119px;left:70px;width:136px;content:'--- US';font-size:16px}
+.contactText{float:left;overflow:hidden;margin-left:55px;height:auto}
+.contactText li{color:#666;font:16px/50px "微软雅黑"}
+.contactText li b{color:#333;font-weight:700}
+.contactText li i{margin:0 6px;color:#333;font-size:22px}
+.Map{margin:0 auto;width:1200px;height:300px;text-align:center}
+/*---- 常见问题 ----*/
+.mertantPro{overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.problemTab{margin-top:40px;height:40px;border-bottom:1px solid #e4e4e4}
+.problemTab li{float:left;padding:0 24px;font:16px/40px "微软雅黑";cursor:pointer}
+.problemTab li.cur{border-bottom:2px solid #724F8E;color:#724F8E}
+.problemCon{overflow:hidden;margin:0 auto;width:1200px;height:auto;height:400px;text-align:center}
+.problemOne{overflow:hidden;height:200px}
+.problemMore{overflow:hidden;margin:0 auto;padding:20px 0;width:1200px;height:auto;border-top:1px solid #e4e4e4}
+.problemMore p{color:#333;text-align:center;font:18px/42px "微软雅黑"}
+.problemMore p a{display:inline-block;margin:0 8px;width:112px;height:40px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;background:#724F8E;color:#fff;text-align:center;font:14px/40px "微软雅黑"}
+.problemMore p b{color:red}
+.courseMain{display:none;overflow:hidden;margin:0 auto;margin-top:20px;width:1200px;height:auto}
+.courseList{float:left;overflow:hidden;height:auto}
+.courseList li{position:relative;overflow:hidden;margin:0 30px 20px 0;width:582px;height:auto}
+.courseList li b{display:block;margin:0 0 14px 21px;color:#333;font:24px/40px "微软雅黑"}
+.courMent{position:relative;padding:30px;width:510px;height:auto;border:5px solid #e4dfe7;background:#fff}
+.courMent p{position:absolute;top:-17px;left:28px}
+.courMent span{display:block;color:#666;font:14px/30px "微软雅黑"}
+.courseRight{float:left;overflow:hidden;height:auto}
+.courseRight li{position:relative;overflow:hidden;margin:0 0 20px 0;width:582px;height:auto}
+.courseRight li b{display:block;margin:0 0 14px 21px;color:#333;font:24px/40px "微软雅黑"}
+/*---- 视频分享 ----*/
+.cvMain{overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.cvMain ul{overflow:hidden;margin:0 auto;margin-top:20px;width:1200px;height:auto}
+.cvMain ul li{position:relative;float:left;margin:0 34px 20px 0;width:376px;height:378px}
+.cvMain ul li img{overflow:hidden;width:378px;height:324px}
+.cvMain ul li h3{padding:0 6px;color:#333;text-align:center;font:14px/44px "微软雅黑"}
+.cvMain ul li:hover .courseHide{padding-top:130px;width:378px;height:250px;background:rgba(114,79,142,.6);zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99724f8e, endColorstr=#99724f8e)}
+.cvMain ul li:hover .courseHide i{display:block}
+.cvMain ul li:hover .courseHide span{display:block}
+.courseHide{position:absolute;top:0;left:0;width:378px;height:0;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}
+.courseHide i{display:none;color:#fff;text-align:center;font-size:40px}
+.courseHide span{display:none;padding-top:10px;color:#fff;text-align:center;font-size:20px}
+.courseTab{position:relative;overflow:hidden;margin:30px 0;height:50px}
+.courseTab a{position:absolute;right:0;bottom:0;float:left;display:block;color:#724F8E}
+.courseTab a.cur{color:#333}
+.courseTab a.coursePrev{right:50px;font-size:50px}
+.courseTab a.courseNext{font-size:50px}
+/*---- 网站地图 ----*/
+.Map{overflow:hidden;margin:0 auto;padding-top:20px;width:1200px;height:auto}
+.Map h2{border-bottom:1px solid #e4e4e4;color:#723F8E;text-align:center;font:24px/70px "微软雅黑"}
+.Map dl{overflow:hidden;margin-bottom:30px;height:auto;text-align:left}
+.Map dl dt{display:inline-block;margin:20px 0;padding:0 22px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;background:#723F8E;color:#fff;font:18px/34px "微软雅黑"}
+.Map dl dd{color:#333;font:16px/40px "微软雅黑"}
+

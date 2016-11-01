@@ -1,0 +1,295 @@
+@charset "utf-8";
+@import '../base/_variables';
+@import '../layout/_breadNav';
+@import '../layout/_config';
+@import '../layout/_navtip';
+@import '../layout/_sidebar';
+/*---- 产品展示 ----*/
+.Product{
+    @include all;
+    background:#f1f1f1;
+}
+.proMain{
+    @include center;
+    margin-top:20px;display:none;
+}
+.proLeft{
+    @include wh(186px,auto);
+    float:left;
+    border:$border;
+    border-bottom:none;
+    background:#fff;
+    margin-top:20px;
+    li{
+       height:52px;
+       font:14px/52px $font;
+       color:#333;
+       text-align:center;
+       border-bottom:$border;
+       cursor:pointer;
+    &.hover{
+        background:#363636;
+        color:#fff;
+           }
+    &:hover{
+        color:#724F8E;
+           }
+    }
+}
+.rightMain{@include wh(1002px,auto);float:left;overflow:hidden;margin-left:10px;}
+.proRight{
+    @include wh(1002px,auto);overflow:hidden;
+    li{
+      float:left;margin:20px 0 0 20px;@include wh(314px,394px);overflow:hidden;cursor:pointer;
+    img{@include wh(314px,258px);display:block;}  
+    &:hover{
+        .proText{
+                background:#724F8E;
+                h3{
+                a{color:#fff;}
+                  }
+                p{color:#c7b1d2;}
+                }
+           }
+      }
+}
+.proText{padding:0 24px;
+      h3{padding:0 8px;text-align:center;
+        a{font:18px/44px $font;color:#333;}
+        }
+      p{font:14px/22px $font;color:#999;max-height:66px;overflow:hidden;}
+      } 
+/*---- 产品科研 ----*/
+.scienList{
+    @include center;
+    li{
+      float:left;margin:20px 20px 0 0;@include wh(285px,368px);overflow:hidden;cursor:pointer;
+    img{@include wh(285px,235px);display:block;}  
+    &:hover{
+        .scienText{
+                background:#724F8E;
+                h3{
+                a{color:#fff;}
+                  }
+                p{color:#c7b1d2;}
+                }
+           }
+      }
+}
+.scienText{padding:0 24px;height:132px;
+      h3{padding:0 8px;text-align:center;
+        a{font:18px/44px $font;color:#333;}
+        }
+      p{font:14px/22px $font;color:#999;max-height:66px;overflow:hidden;margin-bottom:30px;width:237px;}
+      }
+/*---- 监测报告 ----*/
+ .proReport{
+       @include center;
+    li{
+      float:left;@include wh(285px,489px);margin:20px 20px 20px 0;position:relative;cursor:pointer;
+    .reportHide{
+            @include wh(285px,0);
+            position:absolute;
+            left:0;top:0;
+            @include transition(all .5s);
+            i{font-size:40px;text-align:center;color:#fff;display:none;}
+            span{font-size:30px;color:#fff;text-align:center;padding-top:10px;display:none;}
+            }
+   img{display:block;@include wh(285px,285px);}  
+   &:hover{
+     .reportHide{
+            background:rgba(114,79,142,.6);
+            @include filter;
+            padding-top:100px;
+            @at-root :root &{filter:none\9;};
+            @include wh(285px,185px);
+            i{display:block;}
+            span{display:block;}                       
+               }
+    .reportText{
+              background:#333;
+              h3{
+                a{
+                 color:#fff;
+                 }  
+                }                     
+              }
+           }
+       }
+    }
+.reportText{
+    padding:25px;
+    @include wh(235px,auto);
+    h3{
+      a{
+       display:block;font:16px/24px $font;color:#333;max-height:48px;overflow:hidden;padding-right:15px;
+       }  
+      }
+    p{font:14px/24px $font;color:#999;margin:15px 0 10px;max-height:72px;overflow:hidden;}
+    span{
+        font:14px/22px $font;color:#999;margin-right:36px;
+        i{font-size:18px;margin-right:8px;}
+        }
+} 
+/*---- 产品宣传 ----*/
+.paganList{
+    @include center;
+    li{
+      float:left;margin:20px 20px 0 0;@include wh(285px,368px);overflow:hidden;cursor:pointer;
+    img{@include wh(285px,235px);display:block;}  
+    &:hover{
+        .paganText{
+                background:#724F8E;
+                h3{
+                a{color:#fff;}
+                  }
+                p{color:#c7b1d2;}
+                }
+           }
+      }
+}
+.paganText{padding:0 24px;height:132px;
+      h3{padding:0 8px;text-align:center;
+        a{font:18px/44px $font;color:#333;}
+        }
+      p{font:14px/22px $font;color:#999;max-height:66px;overflow:hidden;margin-bottom:30px;width:237px;}
+      }
+/*---- 科研详情页 ----*/
+.scDetail{
+    @include center;margin-bottom:30px;
+  dl{
+    margin:28px 0;height:auto;overflow:hidden;
+   dt{@include wh(424px,350px);float:left;margin-right:38px;}
+   dd{height:auto;overflow:hidden;
+     b{@include wh(100px,34px);background:#724F8E;@include border-radius(20px);text-align:center;overflow:hidden;color:#fff;display:block;font:16px/34px $font;}     
+     p{font:14px/24px $font;color:#666;margin:10px 0;} 
+     }
+    }
+  }
+/*---- 宣传详情页 ----*/
+.paDetail{
+    @include center;margin-bottom:30px;
+  dl{
+    margin:28px 0;height:auto;overflow:hidden;
+   dt{@include wh(424px,350px);float:left;margin-right:38px;}
+   dd{height:auto;overflow:hidden;
+     h3{font:22px/50px $font;color:#333;border-bottom:$border;margin-bottom:20px;}
+     b{@include wh(100px,34px);background:#724F8E;@include border-radius(20px);text-align:center;overflow:hidden;color:#fff;display:block;font:16px/34px $font;}     
+     p{font:14px/24px $font;color:#666;margin:10px 0;} 
+     }
+    }
+  }
+  /*---- 列表详情页 ----*/
+ .listLeft{
+    @include wh(186px,auto);
+    float:left;
+    border:$border;
+    border-bottom:none;
+    background:#fff;
+    margin:20px 30px 0 0;
+    li{
+       height:52px;
+       font:14px/52px $font;
+       color:#333;
+       text-align:center;
+       border-bottom:$border;
+    &.hover{
+        background:#363636;
+        color:#fff;
+           }
+    &:hover{
+        color:#724F8E;
+           }
+    }
+}
+.listDetail{
+    @include center;margin-bottom:30px;
+  dl{
+    margin:21px 0 21px 30px;height:auto;overflow:hidden;
+   dt{@include wh(424px,auto);float:left;margin-right:38px;overflow:hidden;}
+   dd{height:auto;overflow:hidden;
+     b{@include wh(100px,34px);background:#724F8E;@include border-radius(20px);text-align:center;overflow:hidden;color:#fff;display:block;font:16px/34px $font;}     
+     p{font:14px/24px $font;color:#666;margin:10px 0;} 
+     }
+    }
+  }
+.breadInfor h3{font:700 16px/37px $font;border-bottom:$border;color:#333;text-align:center;padding:41px 0;}
+   /*---- 监测报告情页 ----*/
+.detMain{
+    @include center;
+}
+.detTitle{
+      font:22px/32px $font;
+      color:#fff;
+      text-align:center;
+      background:#724F8E;
+      position:relative;
+      @include wh(188px,153px);
+      padding-top:35px;
+      span{font:30px/46px $font;display:block;color:#fff;margin-bottom:30px;}
+    &:before{content:'--- company';position:absolute;left:27px;bottom:78px;width:136px;font-size:16px;} 
+      } 
+.detLeft{
+    @include wh(188px,auto);float:left; 
+    h2{
+       font:20px/32px $font;color:#333;border-bottom:$border;position:relative;margin-top:20px; 
+    &:after{content:'';position:absolute;left:0;bottom:0;width:72px;height:2px;background:#666;}
+      }
+    }
+.detRight{@include wh(982px,auto);float:left;margin-left:30px;overflow:hidden;}  
+.rigTitle{
+    padding:32px 0 25px;text-align:center;border-bottom:$border;
+    h3{font:24px/50px $font;color:#333;}
+    span{
+        font:12px/30px $font;color:#999;display:inline-block;margin-right:10px;
+        b{
+          margin-left:8px;  
+         }
+        i{
+          margin-right:8px;  
+         }
+        }
+}
+.detText{
+    height:auto;overflow:hidden;
+    p{
+     font:14px/40px $font;color:#333;text-indent:24px;margin-top:30px;
+     }
+}
+.detImg{
+    height:auto;width:980px;overflow:hidden;display:table-cell;text-align:center;vertical-align:middle;
+    img{vertical-align:middle}
+    }
+    
+.center-block, .carrousel, .carrousel .wrapper {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.carrousel {
+  position: fixed;
+  background-color: rgba(10, 10, 10, 0.8);
+  display: none;
+    .wrapper {
+      @include wh(600px,600px);
+      overflow: hidden;   
+         > img {
+          width: 100%;
+        }
+    }
+}
+.close {
+  cursor: pointer;
+  color: #FFF;
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 18px;
+    &:hover {
+      font-size: 20px;
+      color: #DDD;
+    }
+}

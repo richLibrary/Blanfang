@@ -1,0 +1,38 @@
+@charset "utf-8";
+@mixin all{
+    width:100%;
+    height:auto;
+    position:relative;
+    overflow:hidden;
+}
+@mixin center{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+    overflow:hidden;
+}
+@mixin border-radius ($radius) {
+    -webkit-border-radius:$radius;     
+       -moz-border-radius:$radius;
+           border-radius:$radius;
+}
+@mixin box-shadow ($shadow) {
+    -webkit-box-shadow:$shadow;     
+       -moz-box-shadow:$shadow;
+           box-shadow:$shadow;
+}
+@mixin transition ($transition) {
+    -webkit-transition:$transition;     
+       -moz-transition:$transition;
+           transition:$transition;
+}
+@mixin wh($w,$h){
+  width: $w;
+  height: $h;
+}
+@mixin filter(){
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99724f8e,endColorstr=#99724f8e);
+    zoom:1;
+}
+$border:1px solid #e4e4e4;
+$font:"\5FAE\8F6F\96C5\9ED1";

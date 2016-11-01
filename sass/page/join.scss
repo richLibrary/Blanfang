@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import '../base/_variables';
+@import '../layout/_navtip';
+@import '../layout/_breadNav';
+/*---- 加盟商风采 ----*/
+.comMain{
+    @include all;
+    background:#f1f1f1;
+}
+.joinInfor{
+    @include center;
+    margin-top:20px;
+    display:none;
+}
+.joinCon{
+    @include center;
+    margin-top:20px;
+    ul{
+       @include center;display:none;
+    li{
+      float:left;@include wh(285px,285px);margin:20px 20px 0 0;position:relative;
+    .joinHide{
+            @include wh(285px,0);
+            position:absolute;
+            left:0;top:0;
+            @include transition(all .5s);
+            i{font-size:40px;text-align:center;color:#fff;display:none;}
+            span{font-size:20px;color:#fff;text-align:center;padding-top:10px;display:none;}
+            }
+   img{display:block;@include wh(285px,285px);}  
+   &:hover{
+     .joinHide{
+            background:rgba(114,79,142,.6);
+            @include filter;
+            padding-top:100px;
+            @at-root :root &{filter:none\9;};
+            @include wh(285px,185px);
+            i{display:block;}
+            span{display:block;}                       
+               }
+    .joinText{
+              background:#333;
+              h3{
+                a{
+                 color:#fff;
+                 }  
+                }                     
+              }
+           }
+       }
+    }
+}
+.joinText{
+    padding:25px;
+    @include wh(235px,auto);
+    h3{
+      a{
+       display:block;font:16px/24px $font;color:#333;max-height:48px;overflow:hidden;padding-right:15px;
+       }  
+      }
+    p{font:14px/24px $font;color:#999;margin:15px 0 10px;max-height:72px;overflow:hidden;}
+    span{
+        font:14px/22px $font;color:#999;margin-right:36px;
+        i{font-size:18px;margin-right:8px;}
+        }
+}
+.joinTab{
+    height:50px;
+    overflow:hidden;    
+    position:relative;
+    margin:30px 0;
+    a{display:block;float:left;color:#724F8E;right:0;bottom:0;position:absolute;
+    &.cur{color:#333;}    
+    &.joinPrev{font-size:50px;right:50px;}
+    &.joinNext{font-size:50px}
+    }
+}
+/*---- 经销商感言 ----*/
+.dealerCon{
+    @include center;margin-top:30px;
+    ul{
+      height:auto;overflow:hidden;display:none;
+    li{
+      margin-bottom:26px;border:$border;@include wh(1049px,106px);padding:10px 10px 10px 140px;position:relative;background:#fff;
+      img{@include wh(106px,106px);display:block;position:absolute;left:10px;top:10px;}
+      h3{font:22px/40px $font;color:#333;}
+      p{font:14px/24px $font;color:#666;max-height:48px;overflow:hidden;}
+      }
+      }
+    }
+    .dealerTab{
+        height:50px;
+        overflow:hidden;    
+        position:relative;
+        margin:30px 0;
+        a{display:block;float:left;color:#724F8E;right:0;bottom:0;position:absolute;
+        &.hover{color:#333;}    
+        &.dealerPrev{font-size:50px;right:50px;}
+        &.dealerNext{font-size:50px}
+        }
+    }

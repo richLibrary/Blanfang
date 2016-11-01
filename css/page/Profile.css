@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*----banner图----*/
+.wrapImg{width:100%;height:auto;position:relative;overflow:hidden; }
+.wrapImg img{width:100%;height:350px;display:block;}
+.profileMain{width:100%;height:auto;position:relative;overflow:hidden; }
+/*----面包屑导航----*/
+.breadNav{overflow:hidden;margin:0 auto;width:1200px;height:auto;background:#fff}
+.breadNav h2{position:relative;float:left;padding-top:35px;width:188px;height:153px;background:#724F8E;color:#fff;text-align:center;font:22px/32px "微软雅黑"}
+.breadNav h2 span{display:block;margin-bottom:30px;color:#fff;font:30px/46px "微软雅黑"}
+.breadNav h2:before{position:absolute;bottom:78px;left:27px;width:136px;content:'--- company';font-size:16px}
+.breadInfor{float:left;overflow:hidden;margin-left:30px;width:982px;height:auto}
+.NavList{height:65px;border-bottom:1px solid #e4e4e4;color:#333;font:14px/65px "微软雅黑"}
+.NavList i{margin:0 6px;color:#333;font-size:22px}
+.NavList a{color:#999}
+.breadTab{overflow:hidden;padding:41px 0;height:auto;border-bottom:1px solid #e4e4e4;text-align:center}
+.breadTab li{display:inline-block;margin:0 20px;padding:0 24px;border:2px solid #FFF;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;color:#333;font:16px/37px "微软雅黑";cursor:pointer}
+.breadTab li.on{border:2px solid #724F8E;color:#724F8E}
+.profileCon{position:relative;overflow:hidden;padding-bottom:50px;width:100%;height:auto;background:#f1f1f1}
+.comMain{position:relative;overflow:hidden;width:100%;height:auto;background:#f1f1f1}
+/*---- 公司概况 ----*/
+.proDetail{position:relative;display:none;overflow:hidden;margin:0 auto;margin:30px auto;width:1200px;height:auto}
+.proText{overflow:hidden;width:900px;height:auto}
+.proText dt{float:right}
+.proText dt img{display:block;width:300px;height:300px}
+.proText dd{float:left;padding-top:50px}
+.proText dd p{overflow:hidden;padding:0 40px 0 0;width:560px;height:auto;max-height:72px;color:#333;text-indent:24px;font:14px/24px "微软雅黑"}
+.proAddres{overflow:hidden;width:900px;height:auto}
+.proAddres dt{float:left}
+.proAddres dt img{display:block;width:364px;height:160px}
+.proAddres dd{float:left;padding:37px 48px 32px;width:440px;height:91px;background:#363636}
+.proAddres dd p{overflow:hidden;color:#666;font:14px/30px "微软雅黑"}
+.proTeam{position:absolute;top:0;right:0;width:300px;height:auto}
+.proTeam dt{float:left}
+.proTeam dt img{display:block;width:300px;height:300px}
+.proTeam dd{position:relative;float:left;padding:44px 40px;width:220px;height:72px;background:#723F8E}
+.proTeam dd p{overflow:hidden;color:#fff;font:20px/30px "微软雅黑"}
+.proTeam dd:before{position:absolute;bottom:35px;left:112px;width:52px;height:2px;background:#fff;content:''}
+/*---- 集团文化 ----*/
+.cullImg{float:left;display:block;margin-left:100px;padding:60px 0;width:473px;height:673px}
+.culList{float:left;overflow:hidden;margin-left:60px;padding:60px 0 0 45px;height:auto}
+.culList li{position:relative;padding:12px 0 12px 30px;border-left:1px solid #e4e4e4}
+.culList li span{position:absolute;top:16px;left:-45px;display:block;color:#724F8E;font:32px/32px Constantia}
+.culList li h2{color:#333;font:22px/38px "微软雅黑"}
+.culList li p{color:#666;font:14px/30px "微软雅黑"}
+/*---- 公司历程 ----*/
+.courseTab{overflow:hidden;padding-top:40px;height:auto}
+.courseTab li{float:left;padding:0 22px;color:#888;font:28px/30px "微软雅黑";cursor:pointer}
+.courseTab li.hover{color:#724F8E}
+.courseCon{overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.courseCon dl{display:none;overflow:hidden;margin-top:30px;height:auto;background:#fff}
+.courseCon dl dt{float:left}
+.courseCon dl dt img{display:block;width:480px;height:318px}
+.courseCon dl dd{float:left;overflow:hidden;margin:44px;width:630px;height:auto;max-height:220px}
+.courseCon dl dd p{width:630px;color:#666;text-indent:24px;font:14px/32px "微软雅黑"}
+/*---- 集团荣誉 ----*/
+.honorCon{overflow:hidden;margin:0 auto;margin-top:22px;width:1200px;height:auto}
+.honorCon ul{display:none;overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.honorCon ul li{position:relative;float:left;margin:20px 33px 0 0;width:378px;height:378px}
+.honorCon ul li span{display:block;color:#666;text-align:center;font:16px/50px "微软雅黑"}
+.honorCon ul li:hover .honHide{padding-top:150px;width:378px;height:228px;background:rgba(114,79,142,.6);zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99724f8e, endColorstr=#99724f8e)}
+.honorCon ul li:hover .honHide i{display:block}
+.honorCon ul li:hover .honHide p{display:block}
+.honHide{position:absolute;top:0;left:0;width:378px;height:0;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}
+.honHide i{display:none;color:#fff;text-align:center;font-size:40px}
+.honHide p{display:none;padding-top:10px;color:#fff;text-align:center;font-size:30px}
+.honorTab{position:relative;overflow:hidden;height:100px}
+.honorTab a{position:absolute;top:0;right:0;float:right;display:inline-block;color:#723F8E;font-size:50px}
+.honorTab a.swit{color:#333}
+.honorTab a.honBtn{right:60px}
+/*---- 总部环境 ----*/
+.envirCon{overflow:hidden;margin:0 auto;margin-top:50px;width:1200px;height:auto}
+.envirCon ul{display:none;overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.envirCon ul li{position:relative;float:left;width:300px;height:300px}
+.envirCon ul li:hover .envirHide{padding-top:100px;width:300px;height:200px;background:rgba(114,79,142,.6);zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99724f8e, endColorstr=#99724f8e)}
+.envirCon ul li:hover .envirHide i{display:block}
+.envirCon ul li:hover .envirHide p{display:block}
+.envirHide{position:absolute;top:0;left:0;width:300px;height:0;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}
+.envirHide i{display:none;color:#fff;text-align:center;font-size:40px}
+.envirHide p{display:none;padding-top:10px;color:#fff;text-align:center;font-size:30px}
+.envirTab{position:relative;overflow:hidden;height:100px}
+.envirTab a{position:absolute;top:0;right:0;float:right;display:inline-block;color:#723F8E;font-size:50px}
+.envirTab a.cur{color:#333}
+.envirTab a.envirBtn{right:60px}
+/*---- 工厂环境 ----*/
+.factorCon{overflow:hidden;margin:0 auto;margin-top:50px;width:1200px;height:auto}
+.factorCon ul{display:none;overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.factorCon ul li{position:relative;float:left;width:300px;height:300px}
+.factorCon ul li:hover .factorHide{padding-top:100px;width:300px;height:200px;background:rgba(114,79,142,.6);zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99724f8e, endColorstr=#99724f8e)}
+.factorCon ul li:hover .factorHide i{display:block}
+.factorCon ul li:hover .factorHide p{display:block}
+.factorHide{position:absolute;top:0;left:0;width:300px;height:0;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}
+.factorHide i{display:none;color:#fff;text-align:center;font-size:40px}
+.factorHide p{display:none;padding-top:10px;color:#fff;text-align:center;font-size:30px}
+.factorTab{position:relative;overflow:hidden;height:100px}
+.factorTab a{position:absolute;top:0;right:0;float:right;display:inline-block;color:#723F8E;font-size:50px}
+.factorTab a.btn{color:#333}
+.factorTab a.factorBtn{right:60px}

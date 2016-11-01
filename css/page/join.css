@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.navTip{height:65px;border-bottom:1px solid #e4e4e4;color:#333;font:14px/65px "微软雅黑"}
+.navTip i{margin:0 6px;color:#333;font-size:22px}
+.navTip a{color:#999}
+/*----banner图----*/
+.wrapImg{position:relative;overflow:hidden;width:100%;height:auto}
+.wrapImg img{display:block;width:100%;height:350px}
+.profileMain{position:relative;overflow:hidden;width:100%;height:auto}
+/*----面包屑导航----*/
+.breadNav{overflow:hidden;margin:0 auto;width:1200px;height:auto;background:#fff}
+.breadNav h2{position:relative;float:left;padding-top:35px;width:188px;height:153px;background:#724F8E;color:#fff;text-align:center;font:22px/32px "微软雅黑"}
+.breadNav h2 span{display:block;margin-bottom:30px;color:#fff;font:30px/46px "微软雅黑"}
+.breadNav h2:before{position:absolute;bottom:78px;left:27px;width:136px;content:'--- style';font-size:16px}
+.breadInfor{float:left;overflow:hidden;margin-left:30px;width:982px;height:auto}
+.NavList{height:65px;border-bottom:1px solid #e4e4e4;color:#333;font:14px/65px "微软雅黑"}
+.NavList i{margin:0 6px;color:#333;font-size:22px}
+.NavList a{color:#999}
+.breadTab{overflow:hidden;padding:41px 0;height:auto;border-bottom:1px solid #e4e4e4;text-align:center}
+.breadTab li{display:inline-block;margin:0 20px;padding:0 27px;border:2px solid #FFF;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;color:#333;font:16px/37px "微软雅黑";cursor:pointer}
+.breadTab li.on{border:2px solid #724F8E;color:#724F8E}
+.profileCon{position:relative;overflow:hidden;padding-bottom:50px;width:100%;height:auto;background:#f1f1f1}
+.comMain{position:relative;overflow:hidden;width:100%;height:auto;background:#f1f1f1}
+/*---- 加盟商风采 ----*/
+.comMain{position:relative;overflow:hidden;width:100%;height:auto;background:#f1f1f1}
+.joinInfor{display:none;overflow:hidden;margin:0 auto;margin-top:20px;width:1200px;height:auto}
+.joinCon{overflow:hidden;margin:0 auto;margin-top:20px;width:1200px;height:auto}
+.joinCon ul{display:none;overflow:hidden;margin:0 auto;width:1200px;height:auto}
+.joinCon ul li{position:relative;float:left;margin:20px 20px 0 0;width:285px;height:285px}
+.joinCon ul li .joinHide{position:absolute;top:0;left:0;width:285px;height:0;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}
+.joinCon ul li .joinHide i{display:none;color:#fff;text-align:center;font-size:40px}
+.joinCon ul li .joinHide span{display:none;padding-top:10px;color:#fff;text-align:center;font-size:20px}
+.joinCon ul li img{display:block;width:285px;height:285px}
+.joinCon ul li:hover .joinHide{padding-top:100px;width:285px;height:185px;background:rgba(114,79,142,.6);zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99724f8e, endColorstr=#99724f8e)}
+.joinCon ul li:hover .joinHide i{display:block}
+.joinCon ul li:hover .joinHide span{display:block}
+.joinCon ul li:hover .joinText{background:#333}
+.joinCon ul li:hover .joinText h3 a{color:#fff}
+.joinText{padding:25px;width:235px;height:auto}
+.joinText h3 a{display:block;overflow:hidden;padding-right:15px;max-height:48px;color:#333;font:16px/24px "微软雅黑"}
+.joinText p{overflow:hidden;margin:15px 0 10px;max-height:72px;color:#999;font:14px/24px "微软雅黑"}
+.joinText span{margin-right:36px;color:#999;font:14px/22px "微软雅黑"}
+.joinText span i{margin-right:8px;font-size:18px}
+.joinTab{position:relative;overflow:hidden;margin:30px 0;height:50px}
+.joinTab a{position:absolute;right:0;bottom:0;float:left;display:block;color:#724F8E}
+.joinTab a.cur{color:#333}
+.joinTab a.joinPrev{right:50px;font-size:50px}
+.joinTab a.joinNext{font-size:50px}
+/*---- 经销商感言 ----*/
+.dealerCon{overflow:hidden;margin:0 auto;margin-top:30px;width:1200px;height:auto}
+.dealerCon ul{display:none;overflow:hidden;height:auto}
+.dealerCon ul li{position:relative;margin-bottom:26px;padding:10px 10px 10px 140px;width:1049px;height:106px;border:1px solid #e4e4e4;background:#fff}
+.dealerCon ul li img{position:absolute;top:10px;left:10px;display:block;width:106px;height:106px}
+.dealerCon ul li h3{color:#333;font:22px/40px "微软雅黑"}
+.dealerCon ul li p{overflow:hidden;max-height:48px;color:#666;font:14px/24px "微软雅黑"}
+.dealerTab{position:relative;overflow:hidden;margin:30px 0;height:50px}
+.dealerTab a{position:absolute;right:0;bottom:0;float:left;display:block;color:#724F8E}
+.dealerTab a.hover{color:#333}
+.dealerTab a.dealerPrev{right:50px;font-size:50px}
+.dealerTab a.dealerNext{font-size:50px}

@@ -1,0 +1,217 @@
+@charset "utf-8";
+@import '../base/_variables';
+@import '../layout/_navtip';
+@import '../layout/_breadNav';
+@import '../layout/_config';
+/*---- 加盟优势 ----*/
+.comMain{
+    @include all;
+    background:#f1f1f1;
+}
+.merchant{@include all;display:none;}
+.merchantCon{
+    @include center;
+    margin-top:30px;
+    position:relative;
+    padding-bottom:30px;
+}
+.merBrand{
+    @include wh(404px,auto);overflow:hidden;float:left;
+    h3{
+       font:24px/50px $font;color:#333;border-bottom:$border;position:relative;
+    &:after{content:'';position:absolute;left:0;bottom:0;width:96px;height:2px;background-color:#724F8E;}
+      }
+}
+.merList{
+    @include wh(404px,auto);overflow:hidden;
+    margin-top:10px;
+       li{
+          float:left;@include wh(197px,234px);margin:10px 10px 0 0;position:relative;
+        span{display:block;position:absolute;left:0;bottom:0;@include wh(197px,37px);overflow:hidden;background:#363636;text-align:center;font:14px/37px $font;color:#fff;}  
+          }                     
+      }
+.Market{
+    @include wh(732px,334px);overflow:hidden;position:relative;margin-left:40px;float:left;
+    dt{@include wh(380px,321px);position:absolute;top:13px;right:0;}
+    dd{
+      @include wh(312px,173px);padding:18px 32px;background:#dedede;margin:70px 0 25px;
+      h3{font:24px/50px $font;color:#333;border-bottom:1px solid #c7c7c7;}
+      p{font:14px/26px $font;text-indent:24px;color:#666;max-height:104px;overflow:hidden;margin-top:15px;}
+      }
+    }
+.proAdvant{
+    @include wh(755px,210px);overflow:hidden;position:absolute;right:0;top:338px;
+    dt{@include wh(210px,210px);float:left;}
+    dd{
+      @include wh(515px,150px);padding:30px 0;margin-left:30px;float:left;
+      p{font:14px/26px $font;text-indent:24px;color:#666;max-height:156px;overflow:hidden;}
+      }
+    }
+.merPro{@include center;position:relative;height:570px;margin-top:30px;}
+.merProject{
+    @include wh(580px,600px);overflow:hidden;float:left;
+    li{@include wh(185px,213px);background:url(../../images/testimg/xingzhuang.png) no-repeat 0 0 scroll;float:left;padding-top:70px;position:absolute;}
+    .proOne{left:99px;top:4px;}
+    .proTwo{left:295px;top:4px;}
+    .proThr{left:0;top:173px;}
+    .proFou{
+        left:196px;bottom:115px;background: url(../../images/testimg/xin.png) no-repeat 0 0 scroll;color:#fff;
+        h2{color:#fff;font-size:28px;position:relative;width:185px;text-align:center; 
+        &:after{content:'';position:absolute;left:65px;bottom:-32px;width:54px;height:3px;background-color:#fff;}
+         }
+        }
+    .proFiv{left:392px;bottom:115px;}
+    .proSix{left:98px;bottom:-55px;}
+    .proSen{left:295px;bottom:-55px;}
+    b{font:18px/22px $font;color:#333;width:185px;text-align:center;display:block;}
+    span{display:block;text-align:center;padding:0 15px;}
+    }
+.merMarket{
+    background:url(../../images/testimg/yingxiao.jpg) no-repeat 0 0 scroll;@include wh(392px,520px);float:left;margin-left:50px;padding:80px 88px 0;
+    h2{font:28px/30px $font;color:#fff;width:282px;padding:0 65px 20px 45px;text-align:center}
+    p{font:14px/22px $font;color:#a5a5a5;text-indent:24px;width:338px;padding:0 50px 10px 30px;}
+    }
+/*---- 加盟政策 ----*/
+.policy{
+    @include center;position:relative;background:#fff;margin:30px auto;}
+    .policyCon{height:auto;overflow:hidden;
+      dt{@include wh(448px,234px);display:block;float:left;}
+      dd{
+        font:18px/30px $font;color:#333;float:left;margin:10px 0 0 30px;padding-left:40px;
+        b{font-weight:700;}
+        span{display:block;@include wh(30px,30px);@include border-radius(15px);background:#363636;color:#fff;text-align:center;margin-left:-40px;float:left;} 
+        }   
+}
+.singleCon{
+    @include wh(468px,280px);background:#363636;padding:24px 66px;float:left;
+    dt{padding:20px 0;border-bottom:$border;
+       h3{font:32px/32px $font;color:#fff;text-align:center;} 
+    }
+    dd{
+       color:#a0a0a0;line-height:30px;margin-top:15px;
+      span{display:block;@include border-radius(20px);border:2px solid #E4E4E4;color:#fff;@include wh(30px,30px);text-align:center;font-size:20px;float:left;margin-right:8px;} 
+       }
+    }
+.agentCon{
+    @include wh(468px,280px);background:#724F8E;padding:24px 66px;float:left;
+    dt{padding:20px 0;border-bottom:$border;
+       h3{font:32px/32px $font;color:#fff;text-align:center;} 
+    }
+    dd{
+       color:#fff;padding-left:15px;line-height:30px;margin-top:15px;
+      span{display:block;@include border-radius(20px);border:2px solid #E4E4E4;color:#fff;@include wh(30px,30px);text-align:center;font-size:20px;float:left;margin-right:8px;} 
+       }
+    }
+/*---- 加盟流程 ----*/
+.merSteps{@include center;margin:30px auto;}
+/*---- 加盟项目 ----*/
+.ProList{
+    @include center;
+   li{
+      margin-right:22px;@include wh(285px,285px);float:left;position:relative;
+      span{position:absolute;left:0;bottom:0;display:block;font:14px/58px $font;color:#fff;@include filter;@at-root :root &{filter:none\9;};background:rgba(114,79,142,.6);width:285px;text-align:center;} 
+    .proHide{
+            background:rgba(114,79,142,.6);
+            @include filter;
+            display: block;
+            position: absolute;
+            top:0;left:0;
+            @at-root :root &{filter:none\9;};
+            @include wh(285px,0);          
+            i{font-size:55px;padding:100px 0 15px;text-align:center;color:#fff;display:none;line-height:32px;}
+            p{font-size:30px;color:#fff;text-align:center;padding-top:10px;display:none;} 
+        } 
+     &:hover{
+          .proHide{@include wh(285px,285px);
+           i{display:block}
+           p{display:block}             
+           }    
+        span{display:none;}
+        }
+      }  
+    }
+/*---- 加盟店列表 ----*/
+.merstoreMain{@include center;}
+.merstoreCon{
+    @include wh(303px,710px);background:#363636;float:left;overflow:scroll;
+    h3{height:50px;font:20px/50px $font;color:#fff;background:#000;text-align:center;}
+    }
+.merstoreList{
+    overflow:auto;@include wh(286px,800px);
+    li{
+      font:16px/40px $font;color:#fff;text-align:center;cursor:pointer;
+    &.on{background:#724F8E;}  
+      }
+}
+.merstorRight{
+    @include wh(895px,auto);float:left;
+    h3{height:50px;font:20px/50px $font;color:#333;background:#e5e5e5;text-align:center;}
+}
+.rightList{
+    height:656px;padding:36px 96px;background:#fff;
+    li{font:18px/40px $font;color:#333;padding-left:16px;position:relative;
+    &:before{
+        content:'';position:absolute;left:0;bottom:14px;width:6px;height:12px;background-color:#724F8E;
+            }
+      }
+}
+.merdetMain{@include all;background:#f1f1f1;}
+.merdetail{@include center;margin-top:40px;overflow:initial;}
+.merdetHr{
+    height:1px;border-top:1px solid #ddd;text-align:center;margin:55px 0;
+    span{
+       position: relative;
+       top: -12px;
+       background:#724F8E;
+       padding:15px 30px;
+       color:#fff;
+      }
+}
+.merdetImg{@include wh(552px,612px);overflow:hidden;float:left;}
+.merdetCon{
+    overflow:hidden;float:left;@include wh(608px,auto);margin-left:30px;
+    h2{
+      font:24px/50px $font;color:#333;border-bottom:$border;position:relative;
+    &:after{content:'';position:absolute;left:0;bottom:0px;width:96px;height:2px;background-color:#724F8E;}  
+      }
+    dl{
+      margin:20px 0 12px;height:auto;overflow:hidden;
+    dt{@include wh(226px,226px);float:right;}
+    dd{
+      float:left;text-indent:24px;font:14px/28px $font;color:#333;@include wh(360px,auto);
+      a{display:block;@include wh(120px,42px);font:18px/42px $font;color:#724F8E;border:2px solid #724F8E;margin:15px 0 0 110px;@include border-radius(30px);}
+      }
+      }
+    }
+.stepsCon{
+    height:auto;overflow:hidden;float:left;margin-left:30px;
+    h2{
+      font:24px/50px $font;color:#333;border-bottom:$border;position:relative;
+    &:after{content:'';position:absolute;left:0;bottom:0px;width:96px;height:2px;background-color:#724F8E;}  
+      }
+    ul{
+      margin:20px 0 12px;height:auto;overflow:hidden;
+    li{
+       float:left;margin-right:10px;border:$border;@include border-radius(6px);
+       img{@include wh(140px,225px);overflow:hidden;}  
+      }
+      }
+    }
+.merdetShow{
+    @include center;margin:15px auto 30px;
+    h2{
+      font:24px/50px $font;color:#333;border-bottom:$border;position:relative;
+    &:after{content:'';position:absolute;left:0;bottom:0px;width:96px;height:2px;background-color:#724F8E;}  
+      }
+    ul{
+       margin-top:20px;height:auto;overflow:hidden;
+      li{
+        float:left;margin-right:9px;
+       img{@include wh(191px,191px);overflow:hidden;} 
+        }
+      }
+    }
+.myMerdet{
+    @include center;text-align:center;margin-bottom:30px;
+    input{@include wh(120px,42px);font:18px/38px $font;color:#724F8E;border:2px solid #724F8E;@include border-radius(30px);background:#fff;} 
+    }

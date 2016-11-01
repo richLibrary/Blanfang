@@ -1,0 +1,202 @@
+@charset "utf-8";
+@import '../base/_variables';
+@import '../layout/_breadNav';
+@import '../layout/_sidebar';
+@import '../layout/_navTip';
+/*---- 照片对比 ----*/
+.Case{
+    @include all;
+    background:#f1f1f1;
+}
+.caseMain{
+    @include center;
+    margin-top:20px;
+    display:none;
+}
+.caseCon{
+    @include center;
+    margin-top:20px;
+    ul{
+       @include center;display:none;
+    li{
+      float:left;@include wh(580px,448px);margin:20px 40px 0 0;position:relative;
+   img{display:block;@include wh(580px,290px);}  
+   &:hover{
+     .caseHide{
+            background:rgba(114,79,142,.6);
+            @include filter;
+            padding-top:200px;
+            @at-root :root &{filter:none\9;};
+            @include wh(580px,248px);
+            i{display:block;}
+            span{display:block;}                       
+               }
+           }
+       }
+    }
+}
+.caseText{
+    padding:25px 30px;
+    @include wh(520px,auto);
+    b{font: 28px/30px $font; color: #724F8E; margin-right: 15px; }
+    font{ font: 16px/20px $font; }
+    p{font:14px/24px $font;color:#999;margin:15px 0 10px;max-height:72px;overflow:hidden;}
+}
+.caseHide{
+        @include wh(580px,0);
+        position:absolute;
+        left:0;top:0;
+        @include transition(all .5s);
+        i{font-size:40px;text-align:center;color:#fff;display:none;}
+        span{font-size:20px;color:#fff;text-align:center;padding-top:10px;display:none;}
+        }
+.caseTab{
+    height:50px;
+    overflow:hidden;    
+    position:relative;
+    margin:30px 0;
+    a{display:block;float:left;color:#724F8E;right:0;bottom:0;position:absolute;
+    &.swit{color:#333;}    
+    &.casePrev{font-size:50px;right:50px;}
+    &.caseNext{font-size:50px}
+    }
+}
+/*---- 视频分享 ----*/
+.videoCon{
+    @include center;
+    ul{@include center;margin-top:20px;
+      li{
+        float:left;margin:0 34px 20px 0;position:relative;@include wh(376px,378px);
+       h3{font:14px/44px $font;color:#333;text-align:center;padding:0 6px;}
+      &:hover{
+         .videoHide{
+                background:rgba(114,79,142,.6);
+                @include filter;
+                padding-top:130px;
+                @at-root :root &{filter:none\9;};
+                @include wh(378px,250px);
+                i{display:block;}
+                span{display:block;}                       
+                }
+             } 
+        }
+    }    
+}
+.caseVideo{@include wh(378px,326px);overflow:hidden;}
+.videoHide{
+        @include wh(378px,0);
+        position:absolute;
+        left:0;top:0;
+        @include transition(all .5s);
+        i{font-size:40px;text-align:center;color:#fff;display:none;}
+        span{font-size:20px;color:#fff;text-align:center;padding-top:10px;display:none;}
+        }
+        
+.videoTab{
+    height:50px;
+    overflow:hidden;    
+    position:relative;
+    margin:30px 0;
+    a{display:block;float:left;color:#724F8E;right:0;bottom:0;position:absolute;
+    &.cur{color:#333;}    
+    &.videoPrev{font-size:50px;right:50px;}
+    &.videoNext{font-size:50px}
+    }
+}
+/*---- 视频分享详情 ----*/
+.videoMain{
+    @include center;
+}
+.videoTitle{
+      font:22px/32px $font;
+      color:#fff;
+      text-align:center;
+      background:#724F8E;
+      position:relative;
+      @include wh(188px,153px);
+      padding-top:35px;
+      span{font:30px/46px $font;display:block;color:#fff;margin-bottom:30px;}
+    &:before{content:'--- company';position:absolute;left:27px;bottom:78px;width:136px;font-size:16px;} 
+      } 
+.videoLeft{
+    @include wh(188px,auto);float:left; 
+    h2{
+       font:20px/32px $font;color:#333;border-bottom:$border;position:relative;margin-top:20px; 
+    &:after{content:'';position:absolute;left:0;bottom:0;width:72px;height:2px;background:#666;}
+      }
+    }
+.videoRight{
+    @include wh(982px,auto);float:left;margin-left:30px;overflow:hidden;
+    h2{font:24px/50px $font;color:#333;text-align:center;padding:36px 0;border-bottom:$border;}
+    dl{
+      @include wh(450px,50px);overflow:hidden;float:left;margin:30px 40px 30px 0;
+      dt{@include wh(78px,50px);background:#724F8E;text-align:center;font:14px/50px $font;color:#fff;float:left;}
+      dd{
+        @include wh(350px,48px);border:$border;overflow:hidden;padding-left:15px;float:left;
+      a{font:14px/50px $font;color:#666;}
+      }
+    }
+}
+.videoNav{
+    height:65px;font:14px/65px $font;color:#333;border-bottom:$border;
+    i{color:#333;font-size:22px;margin:0 6px;}
+    a{color:#999;}
+    }    
+.videoText{
+    height:474px;width:572px;overflow:hidden;margin:50px auto;
+    }
+/*---- 照片对比详情 ----*/
+.photoMain{
+    @include center;
+}
+.photoTitle{
+      font:22px/32px $font;
+      color:#fff;
+      text-align:center;
+      background:#724F8E;
+      position:relative;
+      @include wh(188px,153px);
+      padding-top:35px;
+      span{font:30px/46px $font;display:block;color:#fff;margin-bottom:30px;}
+    &:before{content:'--- company';position:absolute;left:27px;bottom:78px;width:136px;font-size:16px;} 
+      } 
+.photoLeft{
+    @include wh(188px,auto);float:left; 
+    h2{
+       font:20px/32px $font;color:#333;border-bottom:$border;position:relative;margin-top:20px; 
+    &:after{content:'';position:absolute;left:0;bottom:0;width:72px;height:2px;background:#666;}
+      }
+    }
+.photoRight{
+    @include wh(982px,auto);float:left;margin-left:30px;overflow:hidden;
+    h2{font:24px/50px $font;color:#333;text-align:center;padding:36px 0;border-bottom:$border;}
+    dl{
+      @include wh(450px,50px);overflow:hidden;float:left;margin:30px 40px 30px 0;
+      dt{@include wh(78px,50px);background:#724F8E;text-align:center;font:14px/50px $font;color:#fff;float:left;}
+      dd{
+        @include wh(350px,48px);border:$border;overflow:hidden;padding-left:15px;float:left;
+      a{font:14px/50px $font;color:#666;}
+      }
+    }
+}
+.photoNav{
+    height:65px;font:14px/65px $font;color:#333;border-bottom:$border;
+    i{color:#333;font-size:22px;margin:0 6px;}
+    a{color:#999;}
+    }
+.photoTit{
+    padding:32px 0 25px;text-align:center;border-bottom:$border;
+    h3{
+       font:24px/50px $font;color:#666;}
+    span{
+        font:12px/30px $font;color:#999;display:inline-block;margin-right:10px;
+        b{
+          margin-left:8px;font-weight:700;color:#333;  
+         }
+        }
+}    
+.photoText{
+    height:auto;width:980px;overflow:hidden;text-align:center;vertical-align:middle;margin-top:30px;
+    img{vertical-align:middle}
+    p{font:14px/22px $font;color:#333333;text-indent:24px;margin-top:30px;text-align:left;}
+    }

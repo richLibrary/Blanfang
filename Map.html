@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>地图</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/contact.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<div class="Map">
+	<h2>网站导航</h2>
+	<dl>
+		<dt>首页</dt>
+		<dd></dd>
+		<dt>公司概况</dt>
+		<dd>集团简介　／　集团文化　／　公司历程　／　集团荣誉　／　总部环境　／　工厂环境</dd>
+		<dt>企业动态</dt>
+		<dd>集团简介　／　集团文化　／　公司历程　／　集团荣誉　／　总部环境　／　工厂环境</dd>
+		<dt>案例展示</dt>
+		<dd>集团简介　／　集团文化　／　公司历程　／　集团荣誉　／　总部环境　／　工厂环境</dd>
+		<dt>产品展示</dt>
+		<dd>集团简介　／　集团文化　／　公司历程　／　集团荣誉　／　总部环境　／　工厂环境</dd>
+		<dt>加盟商风采</dt>
+		<dd>集团简介　／　集团文化　／　公司历程　／　集团荣誉　／　总部环境　／　工厂环境</dd>
+		<dt>招商加盟</dt>
+		<dd>集团简介　／　集团文化　／　公司历程　／　集团荣誉　／　总部环境　／　工厂环境</dd>
+	</dl>
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript">
+	angular.module('myApp', []).controller('userCtrl', function($scope) {})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+@charset "utf-8";
+@import "../base/_variables";
+@import "../layout/_breadNav";
+/*---- 公司概况 ----*/
+.proDetail{
+    @include center;
+    position:relative;
+    display:none;
+    margin:30px auto;
+}
+.proText{
+    @include wh(900px,auto);
+    overflow:hidden;
+    dt{
+      float:right;
+    img{@include wh(300px,300px);display:block;}
+    }
+    dd{
+        float:left;padding-top:50px;
+    p{font:14px/24px $font;color:#333;padding:0 40px 0 0;@include wh(560px,auto);max-height:72px;overflow:hidden;text-indent:24px;}    
+    }
+}
+.proAddres{
+    @include wh(900px,auto);
+    overflow:hidden;
+    dt{
+      float:left;
+    img{@include wh(364px,160px);display:block;}
+    }
+    dd{
+        float:left;
+        @include wh(440px,91px);
+        padding:37px 48px 32px;
+        background:#363636;
+     p{font:14px/30px $font;color:#666;overflow:hidden;}    
+      }
+}
+.proTeam{
+    @include wh(300px,auto);
+    position:absolute;
+    top:0;right:0; 
+    dt{
+      float:left;
+    img{@include wh(300px,300px);display:block;}
+    }
+    dd{
+        float:left;
+        @include wh(220px,72px);
+        padding:44px 40px;
+        background:#723F8E;
+        position:relative;
+     p{font:20px/30px $font;color:#fff;overflow:hidden;}
+     &:before{content:'';position:absolute;left:112px;bottom:35px;@include wh(52px,2px);background:#fff;}    
+      }
+}
+/*---- 集团文化 ----*/
+.cullImg{@include wh(473px,673px);display:block;float:left;padding:60px 0;margin-left:100px;}
+.culList{
+    float:left;height:auto;overflow:hidden;padding:60px 0 0 45px;margin-left:60px;
+    li{
+      padding:12px 0 12px 30px;border-left:$border;position:relative;
+    span{display:block;font:32px/32px "Constantia";color:#724F8E;position:absolute;left:-45px;top:16px;}
+    h2{font:22px/38px $font;color:#333;}
+    p{font:14px/30px $font;color:#666;}
+      }
+}
+/*---- 公司历程 ----*/
+.courseTab{
+    height:auto;overflow:hidden;padding-top:40px;
+    li{
+       float:left;padding:0 22px;font:28px/30px $font;color:#888;cursor:pointer;
+    &.hover{color:#724F8E;}
+      }
+    }
+.courseCon{
+    @include center;
+    dl{
+      height:auto;overflow:hidden;background:#fff;margin-top:30px;display:none;
+      dt{
+        float:left;
+      img{@include wh(480px,318px);display:block;}
+         }
+      dd{
+        float:left;margin:44px;@include wh(630px,auto);overflow:hidden;max-height:220px;
+      p{font:14px/32px $font;color:#666;text-indent:24px;width:630px;}  
+        }
+      }
+}
+/*---- 集团荣誉 ----*/
+.honorCon{
+    @include center;
+    margin-top:22px;
+    ul{
+       @include center;display:none;
+    li{
+      float:left;@include wh(378px,378px);margin:20px 33px 0 0;position:relative;
+    span{display:block;font:16px/50px $font;color:#666;text-align:center;}  
+   &:hover{
+       .honHide{
+                background:rgba(114,79,142,.6);
+                @include filter;
+                padding-top:150px;
+                @at-root :root &{filter:none\9;};
+                @include wh(378px,228px);
+                i{display:block;}
+                p{display:block;}                       
+               }
+          }
+       }
+    }
+}
+.honHide{
+    @include wh(378px,0);
+    position:absolute;
+    left:0;top:0;
+    @include transition(all .5s);
+    i{font-size:40px;text-align:center;color:#fff;display:none;}
+    p{font-size:30px;color:#fff;text-align:center;padding-top:10px;display:none;}
+      }
+.honorTab{
+    height:100px;
+    overflow:hidden;
+    position:relative;
+    a{display:inline-block;font-size:50px;float:right;color:#723F8E;position:absolute;top:0;right:0;
+    &.swit{color:#333;}
+    &.honBtn{right:60px;}    
+    }
+}
+/*---- 总部环境 ----*/
+.envirCon{
+    @include center;
+    margin-top:50px;
+    ul{
+       @include center;display:none;
+    li{
+      float:left;@include wh(300px,300px);position:relative; 
+   &:hover{
+       .envirHide{
+                background:rgba(114,79,142,.6);
+                @include filter;
+                padding-top:100px;
+                @at-root :root &{filter:none\9;};
+                @include wh(300px,200px);
+                i{display:block;}
+                p{display:block;}                       
+               }
+          }
+       }
+    }
+}
+.envirHide{
+    @include wh(300px,0);
+    position:absolute;
+    left:0;top:0;
+    @include transition(all .5s);
+    i{font-size:40px;text-align:center;color:#fff;display:none;}
+    p{font-size:30px;color:#fff;text-align:center;padding-top:10px;display:none;}
+      }
+.envirTab{
+    height:100px;
+    overflow:hidden;
+    position:relative;
+    a{display:inline-block;font-size:50px;float:right;color:#723F8E;position:absolute;top:0;right:0;
+    &.cur{color:#333;}
+    &.envirBtn{right:60px;}    
+    }
+}
+/*---- 工厂环境 ----*/
+.factorCon{
+    @include center;
+    margin-top:50px;
+    ul{
+       @include center;display:none;
+    li{
+      float:left;@include wh(300px,300px);position:relative; 
+   &:hover{
+       .factorHide{
+                background:rgba(114,79,142,.6);
+                @include filter;
+                padding-top:100px;
+                @at-root :root &{filter:none\9;};
+                @include wh(300px,200px);
+                i{display:block;}
+                p{display:block;}                       
+               }
+          }
+       }
+    }
+}
+.factorHide{
+    @include wh(300px,0);
+    position:absolute;
+    left:0;top:0;
+    @include transition(all .5s);
+    i{font-size:40px;text-align:center;color:#fff;display:none;}
+    p{font-size:30px;color:#fff;text-align:center;padding-top:10px;display:none;}
+      }
+.factorTab{
+    height:100px;
+    overflow:hidden;
+    position:relative;
+    a{display:inline-block;font-size:50px;float:right;color:#723F8E;position:absolute;top:0;right:0;
+    &.btn{color:#333;}
+    &.factorBtn{right:60px;}    
+    }
+}

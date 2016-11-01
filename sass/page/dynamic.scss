@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import '../base/_variables';
+@import '../layout/_breadNav';
+@import '../layout/_config';
+@import '../layout/_sidebar';
+@import '../layout/_navTip';
+/*---- 最新资讯 ----*/
+.newInfor{
+    @include center;
+    margin-top:20px;
+    display:none;
+    ul{
+       @include center;
+    li{
+      float:left;@include wh(285px,489px);margin:20px 20px 0 0;position:relative;
+    .inforHide{
+            @include wh(285px,0);
+            position:absolute;
+            left:0;top:0;
+            @include transition(all .5s);
+            i{font-size:40px;text-align:center;color:#fff;display:none;}
+            span{font-size:30px;color:#fff;text-align:center;padding-top:10px;display:none;}
+            }
+   img{display:block;@include wh(285px,285px);}  
+   &:hover{
+     .inforHide{
+            background:rgba(114,79,142,.6);
+            @include filter;
+            padding-top:100px;
+            @at-root :root &{filter:none\9;};
+            @include wh(285px,185px);
+            i{display:block;}
+            span{display:block;}                       
+               }
+    .inforText{
+              background:#333;
+              h3{
+                a{
+                 color:#fff;
+                 }  
+                }                     
+              }
+           }
+       }
+    }
+}
+.inforText{
+    padding:25px;
+    @include wh(235px,auto);
+    h3{
+      a{
+       display:block;font:16px/24px $font;color:#333;max-height:48px;overflow:hidden;padding-right:15px;
+       }  
+      }
+    p{font:14px/24px $font;color:#999;margin:15px 0 10px;max-height:72px;overflow:hidden;}
+    span{
+        font:14px/22px $font;color:#999;margin-right:36px;
+        i{font-size:18px;margin-right:8px;}
+        }
+}
+/*----新闻详情----*/
+.newsMain{
+    @include center;
+}
+.leftTitle{
+      font:22px/32px $font;
+      color:#fff;
+      text-align:center;
+      background:#724F8E;
+      position:relative;
+      @include wh(188px,153px);
+      padding-top:35px;
+      span{font:30px/46px $font;display:block;color:#fff;margin-bottom:30px;}
+    &:before{content:'--- company';position:absolute;left:27px;bottom:78px;width:136px;font-size:16px;} 
+      } 
+.newsLeft{
+    @include wh(188px,auto);float:left; 
+    h2{
+       font:20px/32px $font;color:#333;border-bottom:$border;position:relative;margin-top:20px; 
+    &:after{content:'';position:absolute;left:0;bottom:0;width:72px;height:2px;background:#666;}
+      }
+    }
+.newsList{
+        height:auto;overflow:hidden;
+        li{
+          margin:10px 0;
+        img{@include wh(188px,188px);display:block;}
+       span{
+        font:14px/22px $font;color:#999;margin-top:6px;display:block;
+        i{font-size:18px;margin-right:8px;}
+           }
+        .newsTT{color:#666;font:14px/30px $font;@include wh(188px,auto);max-height:60px;overflow:hidden;display:block;}
+        }
+}
+.newsRight{@include wh(982px,auto);float:left;margin-left:30px;overflow:hidden;}
+.newsNav{
+    height:65px;font:14px/65px $font;color:#333;border-bottom:$border;
+    i{color:#333;font-size:22px;margin:0 6px;}
+    a{color:#999;}
+    }    
+.newsTitle{
+    padding:32px 0 25px;text-align:center;border-bottom:$border;
+    h2{font:24px/50px $font;color:#333;}
+    span{
+        font:12px/30px $font;color:#999;display:inline-block;margin-right:10px;
+        b{
+          margin-left:8px;  
+         }
+        i{
+          margin-right:8px;  
+         }
+        }
+}
+.newsText{
+    height:auto;overflow:hidden;
+    p{
+     font:14px/40px $font;color:#333;text-indent:24px;margin-top:30px;
+     }
+    dl{
+      @include wh(450px,50px);overflow:hidden;float:left;margin:30px 40px 30px 0;
+      dt{@include wh(78px,50px);background:#724F8E;text-align:center;font:14px/50px $font;color:#fff;float:left;}
+      dd{
+        @include wh(350px,48px);border:$border;overflow:hidden;padding-left:15px;float:left;
+      a{font:14px/50px $font;color:#666;}
+      }
+    }
+}
+.textImg{
+    height:auto;width:980px;overflow:hidden;display:table-cell;text-align:center;vertical-align:middle;
+    img{vertical-align:middle}
+    }

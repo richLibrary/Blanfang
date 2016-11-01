@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>常见问题</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/contact.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<!----banner图---->
+<div class="wrapImg">
+	<a href="" target="_blank" title=""><img src="images/testimg/profile.jpg" width="1920" height="350"></a>
+</div>
+	<!--面包屑导航-->
+<div class="breadNav">
+	<h2><span>Common</span>常见问题</h2>
+	<div class="breadInfor">
+		<div class="NavList">
+			<i class="iconfont">&#xe60b;</i>当前位置：<a href="#" title="" target="_self">首页</a><code> &gt; </code><a href="#" title="" target="_self">常见问题</a><code> &gt; </code>
+			<span>加顾客问题</span>
+		</div>
+		<ul class="breadTab">
+			<li class="on">加盟问题</li>
+			<li>顾客问题</li>
+		</ul>
+	</div>
+</div>
+<!--常见问题-->
+<div class="comMain">
+	<div class="problemMain" style="display:block;">
+		<div class="mertantPro">		
+			<ul class="problemTab">
+				<li class="cur">雀斑问题</li>
+				<li>黄褐斑问题</li>
+				<li>真皮斑问题</li>
+				<li>祛痘问题</li>
+				<li>毛孔粗大问题</li>
+				<li>祛黄美白问题问题</li>
+			</ul>
+		</div>
+		<div class="problemTotal">					
+			<div class="problemCon">
+				<div class="problemOne">
+					001
+				</div>		
+				<div class="problemTwo">
+					002
+				</div>
+			</div>
+			<div class="problemCon">
+				<div class="problemOne">
+					003
+				</div>		
+				<div class="problemTwo">
+					004
+				</div>
+			</div>
+		</div>
+		<div class="problemMore">
+			<p>更多问题请<a href="" target="_self" title="">在线咨询</a>专家，或拨打全国免费服务热线：<b>400-600-3602</b></p>
+		</div>
+	</div>
+<!--顾客问题-->
+	<div class="problemMain">
+		<div class="problemCon">
+			<div class="problemOne">
+				001
+			</div>		
+			<div class="problemTwo">
+				002
+			</div>
+		</div>
+		<div class="problemMore">
+			<p>更多问题请<a href="" target="_self" title="">在线咨询</a>专家，或拨打全国免费服务热线：<b>400-600-3602</b></p>
+		</div>
+	</div>
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript">
+	angular.module('myApp', []).controller('userCtrl', function($scope) {})
+</script>
+<script type="text/javascript">
+	// 导航选项卡切换
+	$(function(){
+		$(".breadTab li").each(function(index){
+			$(this).click(function(){
+				$(".breadTab li.on").removeClass("on");
+				$(this).addClass("on");
+				$(".comMain>div:eq("+index+")").show().siblings().hide();
+				});
+		});
+	});
+	// 加盟问题选项卡切换
+	$(function(){
+		$(".problemTab li").each(function(index){
+			$(this).click(function(){
+				$(".problemTab li.cur").removeClass("cur");
+				$(this).addClass("cur");
+				$(".problemTotal>div:eq("+index+")").show().siblings().hide();
+				});
+		});
+	});
+</script>
+</body>
+</html>

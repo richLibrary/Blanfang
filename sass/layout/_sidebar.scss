@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*----左侧公共部分----*/
+.comList{
+        height:auto;overflow:hidden;
+        li{
+          margin:10px 0;
+        img{@include wh(188px,188px);display:block;}
+       span{
+        font:14px/22px $font;color:#999;margin-top:6px;display:block;
+        i{font-size:18px;margin-right:8px;}
+           }
+        .comTT{color:#666;font:14px/30px $font;@include wh(188px,auto);max-height:60px;overflow:hidden;display:block;}
+        }
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import "../base/_variables";
+/*---- 公共头部 ----*/
+.topBar{
+    @include all;
+    height:134px;
+    }
+.topbarMain{
+        @include center;
+        margin:30px auto;
+        h1{
+           position:relative;
+           @include wh(136px,74px);
+           float:left;
+           a{
+            display:block;
+            @include wh(136px,74px);
+            background:url(../../images/logo.jpg) no-repeat 0px 0px scroll;
+            text-indent:-999em;         
+             } 
+           }
+        span{
+            display:block;float:left;
+            @include wh(270px,74px);
+            border-left:1px solid #e4e4e4;
+        }
+}
+.topPhone{
+        float:right;
+        position:relative;
+        margin-top:16px;
+        padding-left:50px;
+    i{
+        font-size:34px;
+        color:#723f8e;
+        margin:0 8px;
+        position:absolute;
+        left:0;
+        top:5px;
+    }
+    p{
+     color:#333;
+     font:14px/20px $font ;
+    }
+    b{
+      font:26px/26px $font ;
+      color:#723f8e;
+      font-style:italic;
+      padding-right:15px;
+    }
+}
+/*-- Nav --*/
+.Nav{
+    @include wh(100%,52px);
+    background:#723f8e;
+}
+.navList{
+    @include wh(1200px,52px);
+    margin:0 auto;
+    padding-left:27px;
+    li{
+        float:left;position:relative;
+        >a{
+         display:inline-block;
+         padding:0 27px;
+         font:16px/52px $font ;
+         height:52px;
+         color:#eddef5;
+         }
+    &:hover{
+      .navlistDown{
+                    @include wh(116px,auto);background:#724F8E;
+                    a{
+                      display:block;
+                     &:hover{background:#723F8E;}
+                     }
+                  }
+            }
+      }
+    
+}
+.navlistDown{
+    @include wh(116px,0);
+    background:#724F8E;
+    position:absolute;left:0;top:52px;
+
+    z-index:9999;
+    a{font:16px/40px $font;color:#fff;text-align:center;display:none;}
+    }
+.topMain{
+    @include wh(100%,auto);
+    ul{
+      li{
+        >a{
+          border:none;  
+        }  
+      }  
+    }
+}

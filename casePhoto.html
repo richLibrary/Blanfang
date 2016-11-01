@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>案例展示对比照片</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/case.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<!----banner图---->
+<div class="wrapImg">
+	<a href="" target="_blank" title=""><img src="images/testimg/profile.jpg" width="1920" height="350"></a>
+</div>
+<!----视频详情---->
+<div class="photoMain">	
+	<div class="photoLeft">
+		<div class="photoTitle"><span>Case</span>案例展示</div>
+		<h2>热门新闻</h2>
+		<div ng-include="'sidebar.html'"></div>
+	</div>
+	<div class="photoRight">
+		<div class="NavList">
+			<i class="iconfont">&#xe60b;</i>当前位置：<a href="#" title="" target="_self">首页</a><code> &gt; </code><a href="#" title="" target="_self">案例展示</a><code> &gt; </code>
+			<span>对比照片</span>
+		</div>
+		<div class="photoTit">
+			<h3>小张 <font>25岁</font><font>销售</font></h3>
+			<span><b>皮肤问题：</b>雀斑</span>
+			<span><b>治疗时间：</b>3个月</span>	
+		</div>
+		<div class="photoText">
+			<img src="images/testimg/dynimg.jpg">
+			<p>我叫王文培，今年25岁，来自驻马店，现在
+			在郑州开花店。我的整张脸都长有雀斑，而且是遗传性的，大家可以看下我以前的照片，这给我带来了很大的烦恼，因为我本人长得还挺帅，但是这满脸的雀斑，让我失去了自信。
+			</p>
+		</div>
+		<dl>
+			<dt>上一篇</dt>
+			<dd><a href="" target="_blank" title="">签吻芳颜红血丝阻断机一次彻底根除红血丝，永不复发</a></dd>
+		</dl>
+		<dl>
+			<dd><a href="" target="_blank" title="">签吻芳颜红血丝阻断机一次彻底根除红血丝，永不复发</a></dd>
+			<dt>下一篇</dt>
+		</dl>
+	</div>
+</div>
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript">
+	angular.module('myApp', []).controller('userCtrl', function($scope) {})
+</script>
+</body>
+</html>
